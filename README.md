@@ -12,34 +12,49 @@ This Python project resizes and adapts all images inside a folder to a uniform s
 - Maintains aspect ratio or crops images proportionally.
 - Works with various image formats (JPG, PNG, etc.).
 
-## Installation
-
-### Prerequisites
-
-Ensure you have Python installed on your system.
-
-```sh
-python --version
-```
-
-Install required dependencies:
-
-```sh
-pip install pillow
-```
-
 ## Usage
 
-1. Clone this repository:
+1. Make sure you have **Python 3.x** installed. You can check by running:
+
    ```sh
-   git clone https://github.com/Flavio13Lins/image-resizer.git
+   python --version
+   ```
+
+   or
+
+   ```sh
+   python3 --version
+   ```
+
+2. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/yourusername/image-resizer.git
    cd image-resizer
    ```
-2. Run the script:
+
+3. **Create a virtual environment (Recommended)**
+   ```sh
+   python -m venv venv
+   ```
+   Then activate it:
+   - On **Windows**:
+     ```sh
+     venv\Scripts\activate
+     ```
+   - On **Mac/Linux**:
+     ```sh
+     source venv/bin/activate
+     ```
+4. **Install dependencies from `requirements.txt`**
+   ```sh
+   pip install -r requirements.txt
+   ```
+5. **Run the script**
    ```sh
    python main.py
    ```
-3. Follow the prompts to enter the image folder path and desired size.
+6. **Follow the prompts to enter the image folder path and desired size.**
 
 ## Example
 
@@ -52,6 +67,25 @@ pip install pillow
 **After setting target size to 800x600:**
 
 - All images are resized/cropped to 800x600.
+
+## 📸 Comparison: Wrong vs. Correct Resizing
+
+Below is an example of how images can be resized incorrectly and how this tool fixes them.
+
+### 🖼️ Original Image
+
+Here is the original image before resizing.  
+![Original Image](assets/original.webp)
+
+### 🛑 Incorrect Resize (Distorted)
+
+When resized incorrectly, images may stretch or lose proportions.  
+![Incorrect Resize](assets/incorrect_original2.webp)
+
+### ✅ Correct Resize (Maintains Proportions)
+
+This tool resizes images while keeping their proportions intact.  
+![Correctly Resized](assets/correct_adjusted_original.webp)
 
 ## Contributing
 
