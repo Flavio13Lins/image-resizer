@@ -93,4 +93,4 @@ Pull requests are welcome! If you have suggestions, feel free to open an issue o
 
 ## Contact
 
-Developed by [Flávio Lins](https://www.linkedin.com/in/flaviolins/). Feel free to reach out!
+Developed by [Flávio Lins](https://www.linkedin.com/in/flavio13lins/). Feel free to reach out!
