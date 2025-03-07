@@ -66,7 +66,7 @@ This Python project resizes and adapts all images inside a folder to a uniform s
 
 **After setting target size to 800x600:**
 
-- All images are resized/cropped to 800x600.
+- All images are resized/cropped to 800x600 or ANY SIZE YOU NEED.
 
 ## 📸 Comparison: Wrong vs. Correct Resizing
 
