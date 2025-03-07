@@ -1,4 +1,3 @@
-from math import nan
 import os
 from PIL import Image
 from datetime import datetime
@@ -77,22 +76,22 @@ if __name__ == "__main__":
 		error = f"No images found in the folder. \nCheck if the path is correct: {folder_path}"
 		error_message(1, error)
 
-	print(f"We made a check in the imagens inside this folder. \nThe minimum size found is: \nWIDTH {size[0]} px \nHEIGHT {size[1]} px")
+	print(f"We made a check in the images inside this folder. \nThe minimum size found is: \nWIDTH {size[0]} px \nHEIGHT {size[1]} px")
 	width_size = input("Enter the WIDTH in pixels (px): ")
 
 	if not width_size.isdigit() and width_size != '':
-		error = "The value entered to WIDTH is not valid. Please enter only numbers."
+		error = "The value entered for WIDTH is not valid. Please enter only numbers."
 		error_message(2, error)
 
 	height_size = input("Enter the HEIGHT in pixels (px): ")
 
 	if not height_size.isdigit() and height_size != '':
-		error = "The value entered to HEIGHT is not valid. Please enter only numbers."
+		error = "The value entered for HEIGHT is not valid. Please enter only numbers."
 		error_message(2, error)
 
-	if(width_size == '' or nan == width_size):
+	if width_size == '':
 		width_size = size[0]
-	if(height_size == '' or nan == height_size):
+	if height_size == '':
 		height_size = size[1]
 
 	new_size = (int(width_size), int(height_size))
